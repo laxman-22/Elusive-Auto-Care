@@ -1,7 +1,6 @@
 # elusive-auto-care
 
 ### If you are cloning this project make sure you run this (in the file path where the project will be located) before trying to start a development server
-## Project setup
 ```
 file path: .../elusive-auto-care <commands>
 npm install
@@ -11,11 +10,13 @@ npm install
 ```
 npm install -g @vue/cli-service
 ```
-
-### Compiles and hot-reloads for development
+### Run Development server
 ```
 npm run serve
-@@ -20,8 +14,11 @@ npm run serve
+```
+
+### Compiles and hot-reloads for development
+
 ```
 npm run build
 ```
