@@ -1,3 +1,4 @@
+<!--
 <template>
     <div class="wholepage">
         <h1 style="font-size: 35px">Book Now (Beta)</h1>
@@ -30,3 +31,4 @@ export default {
 
 
 </style>
+-->

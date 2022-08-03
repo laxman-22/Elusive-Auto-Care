@@ -1,8 +1,8 @@
 <template>
     <div class="menu">
         <NavButton @navigate="navigateHome" label="Home"/>
-        <NavButton @navigate="navigateBook" label="Book Now"/>
-        <!--<NavButton @navigate="navigateServices" label="Services"/>-->
+        <!--<NavButton @navigate="navigateBook" label="Book Now"/>-->
+        <NavButton @navigate="navigateServices" label="Services"/>
         <NavButton @navigate="navigateContact" label="Contact Us"/>
     </div>
 </template>
