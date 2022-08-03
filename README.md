@@ -21,3 +21,7 @@ npm run serve
 npm run build
 ```
 #### This creates 3 files for JS, CSS, and HTML for the Host Server to display.
+
+### Git branching resource
+
+https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/git/branches/lesson.md
