@@ -1,10 +1,5 @@
 # elusive-auto-care
 
-## Project setup
-```
-npm install
-```
-
 ### Compiles and hot-reloads for development
 ```
 npm run serve
@@ -14,11 +9,4 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# This creates 3 files for JS, CSS, and HTML for the Host Server to display.
