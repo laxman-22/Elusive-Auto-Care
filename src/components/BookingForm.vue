@@ -1,3 +1,4 @@
+<!--
 <template>
     <form @submit="onSubmit" class="form">
         <div class="form">
@@ -473,3 +474,4 @@ img {
 }
 
 </style>
+-->
