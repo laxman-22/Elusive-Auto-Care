@@ -1,10 +1,9 @@
 # elusive-auto-care
 
-#### If you are cloning this project make sure you run
+#### If you are cloning this project make sure you run this before trying to start a development server
 ```
 npm install
 ```
-#### before trying to start a development server
 
 #### You may also need the Vue CLI
 ```
