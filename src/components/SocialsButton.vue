@@ -17,8 +17,14 @@ export default {
 img {
     margin: auto;
     padding: 2%;
-    width: 45px;
-    height: 45px;
+    width: auto;
+    height: auto;
+    min-height: 15px;
+    min-width: 15px;
+    max-height: 60%;
+    max-width: 60%;
     vertical-align: middle;
+    background-position: center center;
+    background-size: cover;
 }
 </style>

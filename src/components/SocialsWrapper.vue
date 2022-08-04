@@ -1,8 +1,6 @@
 <template>
-    <div class="socialmedia">
-        <SocialsButton @navigateToSocial="navToIg" class="btn" label="@elusiveautocare_" image="instagram_icon.png"/>
-        <SocialsButton @navigateToSocial="navToFb" class="btn" label="@keepitelusive" image="Facebook_f_logo.png"/>
-    </div>
+    <SocialsButton @navigateToSocial="navToIg" class="btn" label="@elusiveautocare_" image="instagram_icon.png"/>
+    <SocialsButton @navigateToSocial="navToFb" class="btn" label="@keepitelusive" image="Facebook_f_logo.png"/>
 </template>
 
 <script>
@@ -25,21 +23,19 @@ export default {
 </script>
 
 <style scoped>
-.socialmedia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .btn {
     margin: 1%;
-    padding: 4%;
+    padding: 2%;
     background-color: transparent;
     border: none;
-    font-size: 24px;   
+    font-size: 1.3rem;
+    height: 100%;   
+    min-height: 1vw;
+    max-width: 60%;
+    max-height: 60%;
     line-height: 50px; 
-    position: relative;
-    width: 300px;
+    width: 80%;
+    background-color: white;
 }
 .btn:hover {
     cursor: pointer;
