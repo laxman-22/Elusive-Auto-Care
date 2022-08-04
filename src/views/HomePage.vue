@@ -5,9 +5,9 @@
         </div>
     
         <div class="center">
-            <p>
-                Center
-            </p>
+            <div> 
+              <h2>About</h2>
+            </div>
         </div>
         <div class="right">
             <div class="socialwrap">
