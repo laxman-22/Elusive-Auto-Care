@@ -24,18 +24,16 @@ export default {
 
 <style scoped>
 .btn {
-    margin: 1%;
-    padding: 2%;
+    margin: 4%;
     background-color: transparent;
     border: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     height: 100%;   
     min-height: 1vw;
-    max-width: 60%;
+    max-width: 50%;
     max-height: 60%;
-    line-height: 50px; 
-    width: 80%;
-    background-color: white;
+    width: 45%;
+    background-color: black;
 }
 .btn:hover {
     cursor: pointer;

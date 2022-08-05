@@ -1,5 +1,5 @@
 <template>
-    <button @click="$emit('navigateToSocial')"><img :src="require('../assets/' + image)">{{label}}</button>
+    <button class="button" @click="$emit('navigateToSocial')"><img :src="require('../assets/' + image)">{{label}}</button>
 </template>
 
 <script>
@@ -15,16 +15,15 @@ export default {
 
 <style scoped>
 img {
-    margin: auto;
     padding: 2%;
-    width: auto;
-    height: auto;
     min-height: 15px;
     min-width: 15px;
-    max-height: 60%;
-    max-width: 60%;
+    max-height: 45px;
+    max-width: 45px;
     vertical-align: middle;
     background-position: center center;
-    background-size: cover;
+}
+.button {
+    color: white;
 }
 </style>
