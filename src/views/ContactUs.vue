@@ -1,13 +1,13 @@
 <template>    
     <div class="pagelayout">
-        <h1>Contact Us</h1> 
-        <p>
+        <h1 style="color: white; text-align: center">Contact Us</h1> 
+        <p style="color: white; text-align: center">
             elusiveautocare@gmail.com
         </p>
-        <p>
+        <p style="color: white; text-align: center">
             (647) 525 2502
         </p>
-        <p>
+        <p style="color: white; text-align: center">
             Milton Region
         </p>
         <div class="map">
@@ -26,10 +26,11 @@
     align-content: center;
     flex-direction: column;
     margin: auto;
+    margin-top: 160px;
     width: 60%;
     height: 100vh;
     padding: 2%;
-    background-color: white;
+    background-color: black;
     border-radius: 40px 40px 40px 40px;
 }
 .map {

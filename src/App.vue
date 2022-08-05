@@ -33,9 +33,12 @@ body {
     justify-content: space-evenly;
     padding: 1.5%;
     background-color: black;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0 !important;
     z-index: 100;
+    border-bottom: solid white 1px;
 }
 
 #menu {

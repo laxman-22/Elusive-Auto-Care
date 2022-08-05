@@ -7,12 +7,12 @@ import ServicesPage from '../views/ServicesPage'
 const routes = [
     {
         path: '/',
-        redirect: '/Home'
+        name: 'HomePage',
+        component: HomePage
     },
     {
         path: '/Home',
-        name: 'HomePage',
-        component: HomePage
+        redirect: '/'
     },
     {
         path: '/BookNow',
