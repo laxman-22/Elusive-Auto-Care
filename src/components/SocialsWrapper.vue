@@ -24,15 +24,15 @@ export default {
 
 <style scoped>
 .btn {
-    margin: 4%;
+    margin: auto;
     background-color: transparent;
     border: none;
     font-size: 1.2rem;
     height: 100%;   
-    min-height: 1vw;
-    max-width: 50%;
-    max-height: 60%;
-    width: 45%;
+    min-height: 5%;
+    max-width: 60%;
+    max-height: 50%;
+    width: 30%;
     background-color: black;
 }
 .btn:hover {

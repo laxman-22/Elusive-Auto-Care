@@ -15,11 +15,11 @@ export default {
 
 <style scoped>
 img {
-    padding: 2%;
+    padding-right: 2%;
     min-height: 15px;
     min-width: 15px;
-    max-height: 45px;
-    max-width: 45px;
+    max-height: 36px;
+    max-width: 36px;
     vertical-align: middle;
     background-position: center center;
 }
