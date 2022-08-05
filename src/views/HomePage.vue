@@ -1,6 +1,6 @@
 <template>
     <div class="left"> 
-        <img style="margin-top: 5px;width: 100%; height: auto" src="@/assets/bglogo.png">
+        <img style="margin-top: 5px;width: 100%; height: 62%; max-height: 62%; min-height: 50%" src="@/assets/bglogo.png">
         <div class="socials"> 
             <SocialsWrapper/>
         </div>
@@ -53,8 +53,8 @@ export default {
     display: block;
     position: fixed;
     margin-top: 160px;
-    height: 100vh;
-    width: 40%;
+    height: 100%;
+    width: 38%;
     background-color: black;
 }
 .socials {
@@ -63,7 +63,8 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 0px;
-    height: 100px;
+    width: 100%;
+    height: 8%;
 }
 .right {
     display: flex;
@@ -80,11 +81,13 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 #gallery {
     margin: 16px;
-    width: auto;
+    max-width: 100%;
     max-height: 450px;
     border-radius: 15px;
 }
