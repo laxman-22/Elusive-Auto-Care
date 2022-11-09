@@ -1,4 +1,3 @@
-<!--
 <template>
     <div class="wholepage">
         <h1 style="font-size: 35px">Book Now (Beta)</h1>
@@ -25,10 +24,10 @@ export default {
     flex-direction: column;
     width: 100%;
     height: 3000px;
-    margin: auto;
+    margin-top: 115px;
     background-color: white;
 }
 
 
 </style>
--->
+

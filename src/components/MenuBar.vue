@@ -1,7 +1,7 @@
 <template>
     <div class="menu">
         <NavButton @navigate="navigateHome" label="Home"/>
-        <!--<NavButton @navigate="navigateBook" label="Book Now"/>-->
+        <NavButton @navigate="navigateBook" label="Book Now"/>
         <NavButton @navigate="navigateServices" label="Services"/>
         <NavButton @navigate="navigateContact" label="Contact Us"/>
     </div>
@@ -41,5 +41,6 @@ export default{
     padding-bottom: 5px;
     display: flex;
     justify-content: space-around;
+    transition: 0.4s;
 }
 </style>

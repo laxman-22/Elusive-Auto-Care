@@ -1,6 +1,6 @@
 <template>
-    <SocialsButton @navigateToSocial="navToIg" class="btn" label="@elusiveautocare_" image="instagram_icon.png"/>
-    <SocialsButton @navigateToSocial="navToFb" class="btn" label="@keepitelusive" image="Facebook_f_logo.png"/>
+    <SocialsButton @navigateToSocial="navToIg" class="btn" image="instagram-brands.png"/>
+    <SocialsButton @navigateToSocial="navToFb" class="btn" image="facebook-brands.png"/>
 </template>
 
 <script>
@@ -24,16 +24,15 @@ export default {
 
 <style scoped>
 .btn {
-    margin: auto;
+    margin: 45px;
     background-color: transparent;
     border: none;
-    font-size: 1.2rem;
     height: 100%;   
-    min-height: 5%;
-    max-width: 60%;
-    max-height: 50%;
-    width: 30%;
-    background-color: black;
+    min-height: 8%;
+    max-width: 70%;
+    max-height: 95%;
+    width: 10%;
+    background-color: none;
 }
 .btn:hover {
     cursor: pointer;
