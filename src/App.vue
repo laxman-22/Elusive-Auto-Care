@@ -9,7 +9,8 @@
 </template>
 
 <script>
-import MenuBar from './components/MenuBar.vue';
+import MenuBar from './components/MenuBar.vue'
+
 
 export default {
   name: 'App',
@@ -27,6 +28,17 @@ body {
   background-color: black;
   min-height: 100vh;
 }
+
+@media (max-width: 789px) {
+    img#menu {
+        width: 100%;
+    }
+}
+@media (min-width: 792px) {
+    img#menu {
+        width: 100%;
+    }
+}
 .navcontainer {
     display: flex;
     align-items: center;
@@ -39,10 +51,11 @@ body {
     top: 0 !important;
     z-index: 100;
     border-bottom: solid white 1px;
+    transition: 0.4s;
 }
 
 #menu {
-  max-height: 100px;
+  max-height: 80px;
   max-width: 281.683px;
 }
 

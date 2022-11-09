@@ -28,6 +28,7 @@
 </script>
 
 <style scoped>
+
 .services {
     margin-top: 160px;
     display: flex;
@@ -41,6 +42,7 @@
 .servicesimgs {
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     margin: 20px;
     padding: 20px;
 }

@@ -1,6 +1,6 @@
 <template>
     <div class="left"> 
-        <img style="margin-top: 5px;width: 100%; height: 62%; max-height: 62%; min-height: 50%" src="@/assets/bglogo.png">
+        <img id="backgroundimg" style="margin-top: 5px; width: 100%; height: 60%; max-height: 70%; min-height: 50%;" src="@/assets/bglogo2.jpg">
         <div class="socials"> 
             <SocialsWrapper/>
         </div>
@@ -8,7 +8,6 @@
     <div class="right"> 
         <div class="About"> 
             <h2 style="margin: 10px; padding: 10px; font-weight: bold; font-size: 32px; color: white;">About</h2>
-            <br/>
             <hr style="border: none; width: 95%; float: center; height: 1px; color: white; background-color: white; margin: auto;"/>
         </div>
         <div> 
@@ -25,14 +24,24 @@
         <div> 
             <h2 style="margin: 10px; padding: 10px; font-weight: bold; font-size: 32px; color: white">Gallery</h2>
             <hr style="border: none; width: 95%; float: center; height: 1px; color: white; background-color: white; margin: auto;"/>
+
         </div>
         <br/>
         <div class="galleryimgs"> 
+            <video id="gallery" playsinline autoplay muted loop controls>
+                <source src="@/assets/final-ashwin-detailing.mp4" type=video/mp4>
+            </video>
+            <img id="gallery" src="@/assets/galleryimg7.png"/>
+            <img id="gallery" src="@/assets/galleryimg8.png"/>
+            <img id="gallery" src="@/assets/galleryimg9.png"/>
+            <img id="gallery" src="@/assets/galleryimg10.png"/>
+            <img id="gallery" src="@/assets/galleryimg6.png"/>
             <img id="gallery" src="@/assets/galleryimg2.png"/>
             <img id="gallery" src="@/assets/galleryimg4.png"/>            
             <img id="gallery" src="@/assets/galleryimg3.png"/>
             <img id="gallery" src="@/assets/galleryimg1.png"/>
             <img id="gallery" src="@/assets/galleryimg5.png"/>
+
         </div>
     </div>
 </template>
@@ -49,22 +58,39 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 950px) {
+    img#backgroundimg {
+        display: none;
+    }
+    .socials {
+        flex-direction: column;
+        margin-top: 250px;
+    }
+}
+@media (min-width: 950px) {
+    img#backgroundimg {
+        display: block;
+    }
+    .socials {
+        flex-direction: row;
+        margin: 0px;
+    }
+}
 .left {
     display: block;
     position: fixed;
     margin-top: 160px;
+    width: 34%;
     height: 100%;
-    width: 38%;
     background-color: black;
 }
 .socials {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0px;
     width: 100%;
     height: 8%;
+    background-color: black;
 }
 .right {
     display: flex;
@@ -81,14 +107,14 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     max-width: 100%;
 }
 
 #gallery {
     margin: 16px;
     max-width: 100%;
-    max-height: 450px;
+    max-height: 500px;
     border-radius: 15px;
 }
 

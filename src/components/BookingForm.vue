@@ -1,4 +1,4 @@
-<!--
+
 <template>
     <form @submit="onSubmit" class="form">
         <div class="form">
@@ -131,11 +131,25 @@
 </template>
 
 <script>
+import firebase from 'firebase/app'
+import 'firebase/firestore'
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBq7aAvftRs_xUsZrZSynWnBONlrcn62Qs",
+  authDomain: "elusive-autocare.firebaseapp.com",
+  databaseURL: "https://elusive-autocare-default-rtdb.firebaseio.com",
+  projectId: "elusive-autocare",
+  storageBucket: "elusive-autocare.appspot.com",
+  messagingSenderId: "660526206227",
+  appId: "1:660526206227:web:3e887400cba6755e9a1ee6",
+}
+firebase.initializeApp(firebaseConfig)
 
 export default {
     name: 'BookingForm',
     data() {
         return {
+            id: 0,
             sedan: '',
             suv: '',
             exterior: false,
@@ -275,6 +289,7 @@ export default {
         onSubmit(e) {
             e.preventDefault()
             confirm("Are you sure you want to submit?")
+            var userId = Math.floor(Math.random() * 999999999999999)
 
             if (this.sedan == "" && this.suv == "") {
                 alert("Please select your vehicle type")
@@ -288,27 +303,25 @@ export default {
                 alert("Please select a package")
             }
             else {
-                const newBooking = {
-                    sedan: this.sedan,
-                    suv: this.suv,
-                    exterior: this.exterior,
-                    interior: this.interior,
-                    basic: this.basic,
-                    premium: this.premium,
-                    paintCorrection: this.paintCorrection,
-                    powderCoating: this.powderCoating,
-                    caliperPainting: this.caliperPainting,
-                    engineBayDetail: this.engineBayDetail,
-                    headlightRestoration: this.headlightRestoration,
-                    firstName: this.firstName,
-                    lastName: this.lastName,
-                    email: this.email,
-                    date: this.date,
-                    time: this.time
-                }
-                console.log(newBooking)
-                this.$emit('new-booking', newBooking)
-                console.log("Submitting")
+                    firebase.firestore().collection('users').doc(userId.toString()).set({
+                        id: userId,
+                        sedan: this.sedan,
+                        suv: this.suv,
+                        exterior: this.exterior,
+                        interior: this.interior,
+                        basic: this.basic,
+                        premium: this.premium,
+                        paintCorrection: this.paintCorrection,
+                        powderCoating: this.powderCoating,
+                        caliperPainting: this.caliperPainting,
+                        engineBayDetail: this.engineBayDetail,
+                        headlightRestoration: this.headlightRestoration,
+                        firstName: this.firstName,
+                        lastName: this.lastName,
+                        email: this.email,
+                        date: this.date,
+                        time: this.time,
+                })
             }
 
         }
@@ -474,4 +487,3 @@ img {
 }
 
 </style>
--->

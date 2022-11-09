@@ -25,6 +25,7 @@ export default {
     border: none;
     border-radius: 10px;
     height: 28px;
+    outline: none;
 }
 .NavButton:hover {
     color: white;

@@ -1,12 +1,11 @@
 <template>
-    <button class="button" @click="$emit('navigateToSocial')"><img :src="require('../assets/' + image)">{{label}}</button>
+    <button class="button" @click="$emit('navigateToSocial')"><img :src="require('../assets/' + image)"></button>
 </template>
 
 <script>
 export default {
     name: 'SocialsButton',
     props: {
-        label: String,
         url: String,
         image: String,
     },
@@ -15,15 +14,14 @@ export default {
 
 <style scoped>
 img {
-    padding-right: 2%;
-    min-height: 15px;
-    min-width: 15px;
-    max-height: 36px;
-    max-width: 36px;
-    vertical-align: middle;
-    background-position: center center;
+    max-height: 60px;
+    max-width: 60px;
+    background-color: none;
+    filter: invert(1);
 }
 .button {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
